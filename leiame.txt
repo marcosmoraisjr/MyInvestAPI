@@ -1,0 +1,134 @@
+💻 Preparando o ambiente de trabalho:
+
+#01. Criar o diretório do projeto (exemplo investidor-django):
+    cd D:\Dev\Projetos_Python\cepedi
+    md investidor-django
+    cd investidor-django
+
+#02. Criar um ambiente virtual:
+    python -m venv venv
+
+#03. Ativar o ambiente virtual:
+    .\venv\Scripts\activate
+
+#04. Instalar Django:
+    pip install django
+
+#05. Instalar Django REST Framework:
+    pip install djangorestframework
+
+#06. Criar um novo projeto Django:
+    django-admin startproject restful01
+
+#07. Entrar no diretório do projeto e abrir o arquivo settings.py:
+    cd .\restful01\   
+
+#08 O comando python manage.py startapp myapp cria um novo aplicativo Django chamado “myapp” dentro do seu projeto.  
+    python manage.py startapp myapp
+
+#08 Agora altere o Arquivo "settings.py" conforme orientação abaixo 
+---------------------------------------------------------------------------------------------
+    ## Adicionando o nome do novo aplicativo (myapp):
+    INSTALLED_APPS = [
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        # Habilita Django REST Framework
+        "rest_framework",
+        # Habilita MyApp application
+        'myapp',
+    ]
+
+    ## Setando o layout para português
+    LANGUAGE_CODE = 'pt-br'
+    TIME_ZONE = 'America/Sao_Paulo'
+    USE_I18N = True
+    USE_L10N = True  # Habilita a localização
+    USE_TZ = True
+---------------------------------------------------------------------------------------------
+
+#08. Fazer migrações iniciais para o banco de dados:
+    python manage.py makemigrations
+
+#09. Aplicar as migrações ao banco de dados:
+    python manage.py migrate
+
+#10. Criar um superusuário para acessar a área administrativa:
+     python manage.py createsuperuser
+
+#09. Iniciar o servidor de desenvolvimento:
+     python manage.py runserver
+
+
+
+
+
+
+##########################################################################################
+## Entendendo a estrutura do projeto
+Arquivo "settings.py":
+    - Descrição:
+        Contém todas as configurações do projeto, incluindo:
+            Apps do projeto: Lista de aplicativos instalados.
+            Middlewares: Camadas de processamento que acontecem antes ou depois da view.
+            Databases: Configurações do banco de dados.
+            URLs: Configurações de roteamento para os aplicativos.
+
+    ✅ contém todas as configurações do projeto
+-- nosso apps.
+-- middlewares.
+-- databases.
+✅ contém as URLs para nossos apps.
+-------------------------------------------------------------------------------------------
+Vamos usar essa estrutura:
+
+restful01/
+    manage.py
+    restful01/
+        __init__.py
+        settings.py
+        urls.py
+        wsgi.py
+    myapp/
+        __init__.py
+        admin.py
+        apps.py
+        models/
+            __init__.py
+            usuario.py
+            ativo.py
+            carteira.py
+        views/
+            __init__.py
+            usuario.py
+            ativo.py
+            carteira.py
+        forms/
+            __init__.py
+            usuario.py
+            ativo.py
+            carteira.py
+        urls/
+            __init__.py
+            usuario.py
+            ativo.py
+            carteira.py
+        templates/
+            ativo/
+                ativo_list.html
+                ativo_form.html
+                ativo_confirm_delete.html
+            usuario/
+                usuario_list.html
+            carteira/
+                carteira_list.html
+        migrations/
+        tests.py
+
+
+
+
+
