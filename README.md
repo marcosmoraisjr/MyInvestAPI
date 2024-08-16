@@ -36,15 +36,16 @@ Exemplo de retorno para um ativo:
   - Crescimento de Dividendos (5 anos)..........: 4% ao ano
 
 Exemplo de retorno para para a carteira de ativos:
-Aqui está uma tabela preenchida com informações fictícias para os ativos PETR4, PORD11, BBSA4 e GARE11:
-| **ID** | **Data**   | **Ativo** | **Nome do ativo**                 | **Tipo** | **Dividend Yield (DY)** | **Preço atual** | **P/VP (Preço/Valor Patrimonial)** | **Preço-Teto (modelo Bazin)** | **Indicação**          | **Outros campos relevantes**                              |
-|--------|------------|-----------|----------------------------------|----------|--------------------------|----------------|------------------------------------|-------------------------------|-------------------------|------------------------------------------------------------|
-| 1      | 16/08/2024 | PETR4     | Petróleo Brasileiro S.A          | Ação     | 8.5%                     | R$ 28,50       | 1.2                                | R$ 30,00                      | 🟢 Comprar              | P/L: 6.5, ROE: 18%, Crescimento de Dividendos: 4% ao ano  |
-| 2      | 16/08/2024 | PORD11    | PORD Imobiliário FII             | FII      | 7.2%                     | R$ 100,00      | 0.9                                | R$ 105,00                     | 🟢 Comprar              | Vacância: 3%, Rentabilidade Histórica: 7% ao ano          |
-| 3      | 16/08/2024 | BBSA4     | Banco do Brasil S.A              | Ação     | 6.7%                     | R$ 45,00       | 1.3                                | R$ 47,00                      | 🟢 Comprar              | P/L: 8.0, ROE: 15%, Crescimento de Dividendos: 5% ao ano  |
-| 4      | 16/08/2024 | GARE11    | GARE Imobiliário FII             | FII      | 5.8%                     | R$ 120,00      | 1.1                                | R$ 115,00                     | 🔴 Não-comprar          | Vacância: 5%, Rentabilidade Histórica: 6% ao ano          |
-Legenda: 🟢 comprar ou 🔴 não-comprar
+Aqui está uma tabela exemplo preenchida com informações fictícias para os ativos PETR4, PORD11, BBSA4 e GARE11:
+| **ID** | **Ativo** | **Nome do ativo**           | **Tipo** | **Dividend Yield (DY)** | **Preço atual**  | **P/VP** | **Preço-Teto (Bazin)** | **Indicação** | **P/L** | **ROE** |
+|--------|-----------|-----------------------------|----------|-------------------------|-----------------|----------|------------------------|---------------|---------|--------|
+| 1      | PETR4     | Petróleo Brasileiro S.A      | Ação     | 8.5%                    | R$ 28,50        | 1.2      | R$ 30,00               | 🟢            | 6.5     | 18%    | 
+| 2      | PORD11    | PORD Imobiliário FII         | FII      | 7.2%                    | R$ 100,00       | 0.9      | R$ 105,00              | 🟢            | 10.0    | 12%    | 
+| 3      | BBSA4     | Banco do Brasil S.A          | Ação     | 6.7%                    | R$ 45,00        | 1.3      | R$ 47,00               | 🟢            | 8.0     | 15%    | 
+| 4      | GARE11    | GARE Imobiliário FII         | FII      | 5.8%                    | R$ 120,00       | 1.1      | R$ 115,00              | 🔴            | 12.0    | 10%    | 
 
+Dados da última atualização : 16/08/2024 09h03
+Legenda: 🟢 comprar ou 🔴 não-comprar
 
 Se precisar de algum ajuste ou mais detalhes, estou à disposição!
 
