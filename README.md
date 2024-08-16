@@ -2,7 +2,7 @@
 
 ![Aiko](imagens/logo.png)
 
-Neste teste serão avaliados seus conhecimentos e a metodologia aplicada no desenvolvimento de uma aplicação .NET.
+Neste teste serão avaliados seus conhecimentos e a metodologia aplicada no desenvolvimento de uma aplicação .PYTHON.
 
 ## O Desafio
 
@@ -18,16 +18,36 @@ Implementar as operações de **criação (POST)**, **consulta (GET)** (Por ID e
 
 ![Diagrama](imagens/diagrama.png)
 
-Criar um modelo para listar os ativos (ações e FIIs), com campos como:
-- Ticker (ex: PETR4.SA, HGLG11.SA, PORD11.SA)
-- Nome do ativo
-- Tipo (Ação ou FII)
-- Dividend Yield (DY)
-- Preço atual
-- P/VP (Preço/Valor Patrimonial)
-- Preço-Teto (modelo Bazin)
-- Indicação (🟢 comprar ou 🔴 não-comprar)
-- Outros campos relevantes para o cálculo do preço-teto.
+Criar um modelo para listar os ativos (ações e FIIs), com campos e dados exemplificados abaixo:
+
+Exemplo de retorno para um ativo:
+```
+- Data..........................................: 16/08/2024
+- Ativo.........................................: PETR4
+- Nome do ativo.................................: Petróleo Brasileiro S.A
+- Tipo (Ação ou FII)............................: Ação
+- Dividend Yield (DY)...........................: 8.5%
+- Preço atual...................................: R$ 28,50
+- P/VP (Preço/Valor Patrimonial)................: 1.2
+- Preço-Teto (modelo Bazin).....................: R$ 30,00
+- Indicação (🟢 comprar ou 🔴 não-comprar).....: 🟢 Comprar
+- Outros campos relevantes:
+  - P/L (Preço/Lucro)...........................: 6.5
+  - ROE (Retorno sobre Patrimônio)..............: 18%
+  - Crescimento de Dividendos (5 anos)..........: 4% ao ano
+```
+Aqui está uma tabela exemplo preenchida com informações fictícias para os ativos PETR4, PORD11, BBSA4 e GARE11:
+
+| **ID** | **Ativo** | **Nome do ativo**       | **Tipo** | **Dividend Yield (DY)** | **Preço atual** | **P/VP** | **Preço-Teto (Bazin)** | **Indicação** | **P/L** | **ROE** |
+| ------ | --------- | ----------------------- | -------- | ----------------------- | --------------- | -------- | ---------------------- | ------------- | ------- | ------- |
+| 1      | PETR4     | Petróleo Brasileiro S.A | Ação     | 8.5%                    | R$ 28,50        | 1.2      | R$ 30,00               | 🟢             | 6.5     | 18%     |
+| 2      | PORD11    | PORD Imobiliário FII    | FII      | 7.2%                    | R$ 100,00       | 0.9      | R$ 105,00              | 🟢             | 10.0    | 12%     |
+| 3      | BBSA4     | Banco do Brasil S.A     | Ação     | 6.7%                    | R$ 45,00        | 1.3      | R$ 47,00               | 🟢             | 8.0     | 15%     |
+| 4      | GARE11    | GARE Imobiliário FII    | FII      | 5.8%                    | R$ 120,00       | 1.1      | R$ 115,00              | 🔴             | 12.0    | 10%     |
+
+Carteira: 1 - Aposentadoria<br />
+Dados da última atualização : 16/08/2024 09h03<br />
+Legenda: 🟢 comprar ou 🔴 não-comprar<br />
 
 Fórmula de Cálculo do Preço-Teto:
 
@@ -54,6 +74,8 @@ Após implementar o CRUD para as entidades, implemente os seguintes métodos:
 * Quaisquer outras tecnologias complementares às citadas anteriormente são permitidas desde que seu uso seja justificável.
 
 * Pode ser realizado em equipe desde que na entrega conste o nome de todos os participantes e um relatório das atividades.
+
+* Acrescentar métodos e funcionalidades além dos sugeridos.
 
 ## O que não é permitido
 
