@@ -36,7 +36,6 @@ Exemplo de retorno para um ativo:
   - ROE (Retorno sobre Patrimônio)..............: 18%
   - Crescimento de Dividendos (5 anos)..........: 4% ao ano
 ```
-Exemplo de retorno para uma carteira de ativos:
 Aqui está uma tabela exemplo preenchida com informações fictícias para os ativos PETR4, PORD11, BBSA4 e GARE11:
 
 | **ID** | **Ativo** | **Nome do ativo**           | **Tipo** | **Dividend Yield (DY)** | **Preço atual** | **P/VP** | **Preço-Teto (Bazin)** | **Indicação** | **P/L** | **ROE** |
