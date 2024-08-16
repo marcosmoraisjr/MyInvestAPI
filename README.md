@@ -21,6 +21,7 @@ Implementar as operações de **criação (POST)**, **consulta (GET)** (Por ID e
 Criar um modelo para listar os ativos (ações e FIIs), com campos e dados exemplificados abaixo:
 
 Exemplo de retorno para um ativo:
+```
 - Data..........................................: 16/08/2024
 - Ativo.........................................: PETR4
 - Nome do ativo.................................: Petróleo Brasileiro S.A
@@ -34,7 +35,7 @@ Exemplo de retorno para um ativo:
   - P/L (Preço/Lucro)...........................: 6.5
   - ROE (Retorno sobre Patrimônio)..............: 18%
   - Crescimento de Dividendos (5 anos)..........: 4% ao ano
-
+```
 Exemplo de retorno para para a carteira de ativos:
 Aqui está uma tabela exemplo preenchida com informações fictícias para os ativos PETR4, PORD11, BBSA4 e GARE11:
 | **ID** | **Ativo** | **Nome do ativo**           | **Tipo** | **Dividend Yield (DY)** | **Preço atual**  | **P/VP** | **Preço-Teto (Bazin)** | **Indicação** | **P/L** | **ROE** |
@@ -45,7 +46,7 @@ Aqui está uma tabela exemplo preenchida com informações fictícias para os at
 | 4      | GARE11    | GARE Imobiliário FII         | FII      | 5.8%                    | R$ 120,00       | 1.1      | R$ 115,00              | 🔴            | 12.0    | 10%    | 
 
 Dados da última atualização : 16/08/2024 09h03
-Legenda: 🟢 comprar ou 🔴 não-comprar
+<br />Legenda: 🟢 comprar ou 🔴 não-comprar
 
 Se precisar de algum ajuste ou mais detalhes, estou à disposição!
 
