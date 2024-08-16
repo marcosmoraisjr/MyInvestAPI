@@ -75,6 +75,8 @@ Após implementar o CRUD para as entidades, implemente os seguintes métodos:
 
 * Pode ser realizado em equipe desde que na entrega conste o nome de todos os participantes e um relatório das atividades.
 
+* Acrescentar métodos e funcionalidades além dos sugeridos.
+
 ## O que não é permitido
 
 * Bancos de Dados **não relacionais**.
