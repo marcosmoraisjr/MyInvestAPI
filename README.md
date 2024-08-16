@@ -18,16 +18,36 @@ Implementar as operações de **criação (POST)**, **consulta (GET)** (Por ID e
 
 ![Diagrama](imagens/diagrama.png)
 
-Criar um modelo para listar os ativos (ações e FIIs), com campos como:
-- Ticker (ex: PETR4.SA, HGLG11.SA, PORD11.SA)
-- Nome do ativo
-- Tipo (Ação ou FII)
-- Dividend Yield (DY)
-- Preço atual
-- P/VP (Preço/Valor Patrimonial)
-- Preço-Teto (modelo Bazin)
-- Indicação (🟢 comprar ou 🔴 não-comprar)
-- Outros campos relevantes para o cálculo do preço-teto.
+Criar um modelo para listar os ativos (ações e FIIs), com campos e dados exemplificados abaixo:
+
+Exemplo de retorno para um ativo:
+- Data..........................................: 16/08/2024
+- Ativo.........................................: PETR4
+- Nome do ativo.................................: Petróleo Brasileiro S.A
+- Tipo (Ação ou FII)............................: Ação
+- Dividend Yield (DY)...........................: 8.5%
+- Preço atual...................................: R$ 28,50
+- P/VP (Preço/Valor Patrimonial)................: 1.2
+- Preço-Teto (modelo Bazin).....................: R$ 30,00
+- Indicação (🟢 comprar ou 🔴 não-comprar).....: 🟢 Comprar
+- Outros campos relevantes:
+  - P/L (Preço/Lucro)...........................: 6.5
+  - ROE (Retorno sobre Patrimônio)..............: 18%
+  - Crescimento de Dividendos (5 anos)..........: 4% ao ano
+
+Exemplo de retorno para para a carteira de ativos:
+Aqui está uma tabela preenchida com informações fictícias para os ativos PETR4, PORD11, BBSA4 e GARE11:
+| **ID** | **Data**   | **Ativo** | **Nome do ativo**                 | **Tipo** | **Dividend Yield (DY)** | **Preço atual** | **P/VP (Preço/Valor Patrimonial)** | **Preço-Teto (modelo Bazin)** | **Indicação**          | **Outros campos relevantes**                              |
+|--------|------------|-----------|----------------------------------|----------|--------------------------|----------------|------------------------------------|-------------------------------|-------------------------|------------------------------------------------------------|
+| 1      | 16/08/2024 | PETR4     | Petróleo Brasileiro S.A          | Ação     | 8.5%                     | R$ 28,50       | 1.2                                | R$ 30,00                      | 🟢 Comprar              | P/L: 6.5, ROE: 18%, Crescimento de Dividendos: 4% ao ano  |
+| 2      | 16/08/2024 | PORD11    | PORD Imobiliário FII             | FII      | 7.2%                     | R$ 100,00      | 0.9                                | R$ 105,00                     | 🟢 Comprar              | Vacância: 3%, Rentabilidade Histórica: 7% ao ano          |
+| 3      | 16/08/2024 | BBSA4     | Banco do Brasil S.A              | Ação     | 6.7%                     | R$ 45,00       | 1.3                                | R$ 47,00                      | 🟢 Comprar              | P/L: 8.0, ROE: 15%, Crescimento de Dividendos: 5% ao ano  |
+| 4      | 16/08/2024 | GARE11    | GARE Imobiliário FII             | FII      | 5.8%                     | R$ 120,00      | 1.1                                | R$ 115,00                     | 🔴 Não-comprar          | Vacância: 5%, Rentabilidade Histórica: 6% ao ano          |
+Legenda: 🟢 comprar ou 🔴 não-comprar
+
+
+Se precisar de algum ajuste ou mais detalhes, estou à disposição!
+
 
 Fórmula de Cálculo do Preço-Teto:
 
