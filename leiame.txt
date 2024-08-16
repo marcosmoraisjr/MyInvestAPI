@@ -17,6 +17,9 @@
 #05. Instalar Django REST Framework:
     pip install djangorestframework
 
+    observação opcional: Para usar o Swagger no seu projeto Django, você pode seguir os seguintes passos para integrar a documentação interativa da API. O Swagger é geralmente integrado através de uma ferramenta chamada drf-yasg, que é um gerador de documentação para APIs construídas com Django REST Framework.
+    pip install drf-yasg
+
 #06. Criar um novo projeto Django:
     django-admin startproject restful01
 
@@ -64,8 +67,10 @@
 
 
 
-
-
+Observação para criação ou atualização das tabelas no banco usando migração:
+python manage.py makemigrations myapp
+python manage.py migrate 
+python manage.py showmigrations
 
 ##########################################################################################
 ## Entendendo a estrutura do projeto

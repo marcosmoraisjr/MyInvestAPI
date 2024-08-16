@@ -8,5 +8,9 @@ class Ativo(models.Model):
     data_criacao = models.DateTimeField(auto_now_add=True)
     data_update = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        ordering = ('descricao',)
+        
     def __str__(self):
-        return self.codigo
+        #return self.codigo
+        return f'{self.codigo} - {self.descricao}'
