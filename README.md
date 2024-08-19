@@ -38,12 +38,12 @@ Exemplo de retorno para um ativo:
 ```
 Aqui está uma tabela exemplo preenchida com informações fictícias para os ativos PETR4, PORD11, BBSA4 e GARE11:
 
-| **ID** | **Ativo** | **Empresa**       | **Tipo** | **Dividend Yield (DY)** | **Preço atual** | **P/VP** | **Preço-Teto** | **Indicação** | **P/L** | **ROE** |
-| ------ | --------- | ----------------------- | -------- | ----------------------- | --------------- | -------- | ---------------------- | ------------- | ------- | ------- |
-| 1      | PETR4     | Petróleo Brasileiro S.A | Ação     | 8.5%                    | R$ 28,50        | 1.2      | R$ 30,00               | 🟢             | 6.5     | 18%     |
-| 2      | PORD11    | PORD Imobiliário FII    | FII      | 7.2%                    | R$ 100,00       | 0.9      | R$ 105,00              | 🟢             | 10.0    | 12%     |
-| 3      | BBSA4     | Banco do Brasil S.A     | Ação     | 6.7%                    | R$ 45,00        | 1.3      | R$ 47,00               | 🟢             | 8.0     | 15%     |
-| 4      | GARE11    | GARE Imobiliário FII    | FII      | 5.8%                    | R$ 120,00       | 1.1      | R$ 115,00              | 🔴             | 12.0    | 10%     |
+| **ID** | **Ativo** | **Empresa**             | **Tipo** | **Dividend Yield (DY)** | **Preço atual** | **P/VP** | **Preço-Teto** | **Indicação** | **P/L** | **ROE** |
+| ------ | --------- | ----------------------- | -------- | ----------------------- | --------------- | -------- | -------------- | ------------- | ------- | ------- |
+| 1      | PETR4     | Petróleo Brasileiro S.A | Ação     | 8.5%                    | R$ 28,50        | 1.2      | R$ 30,00       | 🟢             | 6.5     | 18%     |
+| 2      | PORD11    | PORD Imobiliário FII    | FII      | 7.2%                    | R$ 100,00       | 0.9      | R$ 105,00      | 🟢             | 10.0    | 12%     |
+| 3      | BBSA4     | Banco do Brasil S.A     | Ação     | 6.7%                    | R$ 45,00        | 1.3      | R$ 47,00       | 🟢             | 8.0     | 15%     |
+| 4      | GARE11    | GARE Imobiliário FII    | FII      | 5.8%                    | R$ 120,00       | 1.1      | R$ 115,00      | 🔴             | 12.0    | 10%     |
 
 Carteira: 1 - Aposentadoria<br />
 Dados da última atualização : 16/08/2024 09h03<br />
