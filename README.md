@@ -2,7 +2,7 @@
 
 ![Aiko](imagens/logo.png)
 
-Neste teste serão avaliados seus conhecimentos e a metodologia aplicada no desenvolvimento de uma aplicação .PYTHON.
+Neste teste serão avaliados seus conhecimentos e a metodologia aplicada no desenvolvimento de uma aplicação PYTHON.
 
 ## O Desafio
 
