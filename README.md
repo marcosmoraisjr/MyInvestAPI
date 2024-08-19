@@ -38,7 +38,7 @@ Exemplo de retorno para um ativo:
 ```
 Aqui está uma tabela exemplo preenchida com informações fictícias para os ativos PETR4, PORD11, BBSA4 e GARE11:
 
-| **ID** | **Ativo** | **Nome do ativo**       | **Tipo** | **Dividend Yield (DY)** | **Preço atual** | **P/VP** | **Preço-Teto (Bazin)** | **Indicação** | **P/L** | **ROE** |
+| **ID** | **Ativo** | **Empresa**       | **Tipo** | **Dividend Yield (DY)** | **Preço atual** | **P/VP** | **Preço-Teto** | **Indicação** | **P/L** | **ROE** |
 | ------ | --------- | ----------------------- | -------- | ----------------------- | --------------- | -------- | ---------------------- | ------------- | ------- | ------- |
 | 1      | PETR4     | Petróleo Brasileiro S.A | Ação     | 8.5%                    | R$ 28,50        | 1.2      | R$ 30,00               | 🟢             | 6.5     | 18%     |
 | 2      | PORD11    | PORD Imobiliário FII    | FII      | 7.2%                    | R$ 100,00       | 0.9      | R$ 105,00              | 🟢             | 10.0    | 12%     |
