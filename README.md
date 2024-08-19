@@ -45,10 +45,11 @@ Aqui está uma tabela exemplo preenchida com informações fictícias para os at
 | 3      | BBSA4     | Banco do Brasil S.A     | Ação     | 6.7%                    | R$ 45,00        | 1.3      | R$ 47,00       | 🟢             | 8.0     | 15%     |
 | 4      | GARE11    | GARE Imobiliário FII    | FII      | 5.8%                    | R$ 120,00       | 1.1      | R$ 115,00      | 🔴             | 12.0    | 10%     |
 
-Carteira: 1 - Aposentadoria<br />
-Dados da última atualização : 16/08/2024 09h03<br />
-Legenda: 🟢 comprar ou 🔴 não-comprar<br />
-
+````
+Legenda............: 🟢 comprar ou 🔴 não-comprar
+Carteira...........: 01 Aposentadoria
+Última Atualização.: 16/08/2024 09h03
+````
 ### Fórmula do Preço Teto segundo <abbr title="Veja livro Faça Fortuna com Ações, Antes que seja Tarde">Décio Bazin</abbr>
 
 $$
