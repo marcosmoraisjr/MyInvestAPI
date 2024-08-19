@@ -52,16 +52,6 @@ Carteira...........: 01 Aposentadoria
 ````
 ### Fórmula do Preço Teto segundo <abbr title="Veja livro Faça Fortuna com Ações, Antes que seja Tarde">Décio Bazin</abbr>
 
-<<<<<<< HEAD
-$$
-\text{Preço Teto} = \frac{\text{Dividendo Médio por Ação}}{\text{Taxa de Retorno Desejada}}
-$$
-
-### Explicação dos Elementos da Fórmula
-* `Preço Teto`:
-Este é o valor máximo que você deve pagar por uma ação para que o investimento atenda à taxa de retorno desejada com base nos dividendos. É um limite de preço para a compra de Ações ou Fundo de Investimento Imobiliário (FII), garantindo que você só compre se o preço estiver favorável em relação aos dividendos pagos.
-
-=======
 ### Fórmula do Preço Teto segundo Décio Bazin
 <small>Veja livro:📕Faça Fortuna com Ações, Antes que seja Tarde</small>
 
@@ -73,7 +63,6 @@ $$
 * `Preço Teto`:
 Este é o valor máximo que você deve pagar por uma ação para que o investimento atenda à taxa de retorno desejada com base nos dividendos. É um limite de preço para a compra de Ações ou Fundo de Investimento Imobiliário (FII), garantindo que você só compre se o preço estiver favorável em relação aos dividendos pagos.
 
->>>>>>> 1f43b232014c88b2b8595d46f126c82653832df9
 * `Dividendo Médio por Ação`:
 Refere-se à média dos dividendos pagos por ativo ao longo de um período específico, geralmente em anos. É aconselhável considerar a média dos últimos cinco anos, excluindo o ano corrente. Este valor representa quanto a empresa distribui em dividendos para cada ativo que você possui.
 
