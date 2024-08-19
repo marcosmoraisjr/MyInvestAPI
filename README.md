@@ -49,12 +49,33 @@ Carteira: 1 - Aposentadoria<br />
 Dados da última atualização : 16/08/2024 09h03<br />
 Legenda: 🟢 comprar ou 🔴 não-comprar<br />
 
-O preço-teto, também conhecido como preço justo, é uma métrica popularizada por Décio Bazin e Luiz Barsi Filho. Ele representa o valor máximo que um investidor deveria pagar por uma ação, com o objetivo de obter um retorno com dividendos de pelo menos 6%.
+### Fórmula do Preço Teto segundo <abbr title="Veja livro Faça Fortuna com Ações, Antes que seja Tarde">Décio Bazin</abbr>
 
-Fórmula de Cálculo do Preço-Teto:
-![Preço-Teto](imagens/preco-teto.png)
+$$
+\text{Preço Teto} = \frac{\text{Dividendo Médio por Ação}}{\text{Taxa de Retorno Desejada}}
+$$
 
-### Métodos
+### Explicação dos Elementos da Fórmula
+* `Preço Teto`:
+Este é o valor máximo que você deve pagar por uma ação para que o investimento atenda à taxa de retorno desejada com base nos dividendos. É um limite de preço para a compra de Ações ou Fundo de Investimento Imobiliário (FII), garantindo que você só compre se o preço estiver favorável em relação aos dividendos pagos.
+
+* `Dividendo Médio por Ação`:
+Refere-se à média dos dividendos pagos por ativo ao longo de um período específico, geralmente em anos. É aconselhável considerar a média dos últimos cinco anos, excluindo o ano corrente. Este valor representa quanto a empresa distribui em dividendos para cada ativo que você possui.
+
+* `Taxa de Retorno Desejada`:
+Esta é a taxa mínima de retorno que você deseja obter ao investir na ação. Décio Bazin recomendava uma taxa de retorno maior que 6% ao ano (para FIIs, pode haver uma diferença na Taxa de Retorno Desejada devido às características distintas dos FIIs em relação às ações), o que significa que a ação deve pagar pelo menos a Taxa de Retorno Desejada do preço que você pagou em forma de dividendos anuais.
+
+<!--![Preço-Teto](imagens/preco-teto.png)/-->
+
+### Exemplo Prático
+- Se uma empresa paga um dividendo médio de R$ 3,00 por ação e você deseja uma taxa de retorno de 8% (0,08), o cálculo seria:
+$$
+\text{Preço Teto} = \frac{R\$ 3,00}{8\%} = R\$  37,50
+$$
+
+- Portanto, o preço teto para essa ação seria R$ 37,50. Se o preço de mercado da ação estiver abaixo desse valor, pode ser uma boa compra segundo o critério de Bazin.
+
+## Métodos
 
 Após implementar o CRUD para as entidades, implemente os seguintes métodos:
 
