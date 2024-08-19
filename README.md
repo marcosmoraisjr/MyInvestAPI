@@ -49,8 +49,9 @@ Carteira: 1 - Aposentadoria<br />
 Dados da última atualização : 16/08/2024 09h03<br />
 Legenda: 🟢 comprar ou 🔴 não-comprar<br />
 
-Fórmula de Cálculo do Preço-Teto:
+O preço-teto, também conhecido como preço justo, é uma métrica popularizada por Décio Bazin e Luiz Barsi Filho. Ele representa o valor máximo que um investidor deveria pagar por uma ação, com o objetivo de obter um retorno com dividendos de pelo menos 6%.
 
+Fórmula de Cálculo do Preço-Teto:
 ![Preço-Teto](imagens/preco-teto.png)
 
 ### Métodos
