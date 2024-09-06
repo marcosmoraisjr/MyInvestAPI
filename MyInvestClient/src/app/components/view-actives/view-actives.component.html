@@ -1,0 +1,28 @@
+
+<section class="main-section">
+     <h1>Meus ativos</h1>
+
+     <div class="message" #message>
+          <p>Você ainda não tem ativos cadastrados...</p>
+     </div>
+     <div class="cards">
+          <ng-container class="container" *ngFor="let active of actives">
+               <div class="card" (click)="redirectToActive(active.code)">
+                    <div class="title">
+                         <div class="logo">
+                              <img src="/assets/finance.png">
+                         </div>
+                         <div class="info">
+                              <p>Ticker: {{ active.code }}</p>
+                              <p>Tipo: {{ active.type }}</p>
+                         </div>
+                    </div>
+               </div>
+          </ng-container>
+     </div>
+
+</section>
+<div class="add" (click)="createActive()">
+     <img src="/assets/add.png" class="add-icon">
+</div>
+<app-loading [isLoading]="isLoading"></app-loading>

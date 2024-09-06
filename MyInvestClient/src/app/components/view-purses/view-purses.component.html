@@ -1,0 +1,34 @@
+<section class="main-section">
+     <h1>Minhas carteiras</h1>
+
+     <div class="message" #message>
+          <p>Você não tem carteiras cadastradas...</p>
+     </div>
+
+     <div class="purses">
+          <div class="titles">
+               <div>Nome</div>
+               <div>Descrição</div>
+               <div>Ações</div>
+          </div>
+          <div class="container" *ngFor="let purse of purses">
+               <div class="column">{{ purse.name }}</div>
+               <div class="column divisor">{{ purse.description }}</div>
+               <div class="actions-container column divisor">
+                    <div class="actions edit">
+                         <img src="assets/edit.png">
+                    </div>
+                    <div class="actions delete">
+                         <img src="assets/delete.png">
+                    </div>
+               </div>
+          </div>
+     </div>
+    
+
+
+</section>
+<div class="add" (click)="createPurse()">
+     <img src="/assets/add.png" class="add-icon">
+</div>
+<app-loading [isLoading]="isLoading"></app-loading>

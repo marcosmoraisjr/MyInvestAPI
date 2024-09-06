@@ -1,0 +1,18 @@
+<section class="main-section">
+     <h1>Buscar ativos</h1>
+     <p class="subtitle">Use o campo abaixo para pesquisar as informações sobre novos ativos!</p>
+
+     <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <p class="description-input">Pesquise o ativo pelo seu ticker</p>
+
+          <div class="error-container">
+               <p class="error-message" *ngIf="form.get('name')?.errors?.['required'] && form.get('name')?.touched">
+                    O nome não pode ser nulo ao realizar uma pesquisa!
+               </p>
+          </div>
+          <input type="text" placeholder="Digite aqui o ticker, Ex: 'AAPL'" formControlName="name">
+
+          <button type="submit">Buscar ativo</button>
+     </form>
+</section>
+<app-loading [isLoading]="isLoading"></app-loading>

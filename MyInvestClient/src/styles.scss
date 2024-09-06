@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+}
+
+body {
+     background-color: #f0f8ff;
+}
+
+.card {
+     border: 1px solid #ccc;
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
