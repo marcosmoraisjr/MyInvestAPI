@@ -1,0 +1,26 @@
+<section class="main-section">
+     <h1>Atualizar carteira</h1>
+     <p class="subtitle">Modifique os dados para atualizar sua carteira!</p>
+
+     <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="error-container">
+               <p class="error-message" *ngIf="form.get('name')?.errors?.['required'] && form.get('name')?.touched">
+                    O campo nome é obrigatório!
+               </p>
+               <p class="error-message" *ngIf="form.get('name')?.errors?.['minlength'] && form.get('name')?.touched">
+                    O nome deve ter pelo menos 3 caracteres!
+               </p>
+          </div>
+          <input type="text" name="name" placeholder="nome" formControlName="name">
+
+          <div class="error-container">
+               <p class="error-message" *ngIf="form.get('description')?.errors?.['required'] && form.get('description')?.touched">
+                    A descrição é obrigatória!
+               </p>
+          </div>
+          <textarea name="description" class="description" maxlength="300" placeholder="descrição da sua carteira" formControlName="description"></textarea>
+
+          <button type="submit">Atualizar carteira</button>
+     </form>
+</section>
+<app-loading [isLoading]="isLoading"></app-loading>

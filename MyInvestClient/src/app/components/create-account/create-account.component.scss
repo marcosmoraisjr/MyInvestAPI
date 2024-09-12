@@ -1,0 +1,99 @@
+@import '../../scss/color-variables.scss';
+
+@keyframes fadeIn {
+     from {
+          opacity: 0;
+     }
+     to {
+          opacity: 1;
+     }
+}
+
+.main-section {
+     width: 100%;
+     padding: 5% 10%;
+     animation: fadeIn 0.2s ease-in;
+}
+
+.main-section h1 {
+     text-align: center;
+     font-size: 40px;
+     color: $primary-color;
+     margin-bottom: 10px;
+     font-weight: 800;
+}
+
+.subtitle {
+     text-align: center;
+     font-size: 14px;
+     color: #444444;
+     margin-bottom: 20px;
+}
+
+.main-section input {
+     font-size: 16px;
+     width: 100%;
+     padding: 13px;
+     border-radius: 10px;
+     border: 1px solid #ccc;
+     margin-bottom: 10px;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-section button {
+     display: block;
+     padding: 15px;
+     font-size: 18px;
+     margin: 30px auto;
+     background-color: $primary-color;
+     color: #fff;
+     border: 1px solid #ccc;
+     border-radius: 12px;
+     cursor: pointer;
+     width: 60%;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-section button:active {
+     background-color: $secundary-color;
+}
+
+.error-container {
+     height: 2px; 
+     margin-bottom: 20px; 
+     text-align: center;
+}
+
+.error-message {
+     font-size: 16px;
+     color: rgb(223, 41, 41);
+     transition: opacity 0.3s ease-in-out;
+     margin-bottom: 5px;
+     padding: 0;
+}
+
+@media (min-width: 870px) {
+     .main-section {
+          padding: 2% 10%;
+     }
+
+     form {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .main-section input {
+          width: 700px;
+     }
+
+     .main-section p {
+          font-size: 17px;
+     }
+
+     .main-section button {
+          width: 700px;
+          padding: 20px;
+     }
+}

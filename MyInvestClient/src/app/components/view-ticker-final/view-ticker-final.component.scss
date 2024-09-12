@@ -1,0 +1,25 @@
+@import '../../scss/color-variables.scss';
+
+.main-section h1 {
+     text-align: center;
+     font-size: 35px;
+     color: $primary-color;
+     margin: 20px 0 10px 0;
+}
+
+table {
+     width: 90%;
+     margin: auto;
+     border-collapse: collapse;
+     margin-top: 20px;
+}
+
+th, td {
+     border: 1px solid #ccc;
+     padding: 8px;
+     text-align: left;
+}
+
+th {
+     background-color: #f2f2f2;
+}
