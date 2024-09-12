@@ -1,0 +1,34 @@
+<section class="main-section">
+     <h1>Meus ativos</h1>
+
+     <div class="message" #message>
+          <p>Você não tem ativos cadastrados...</p>
+     </div>
+
+     <div class="purses">
+          <div class="titles" #titles>
+               <div>Codigo</div>
+               <div>Tipo</div>
+               <div>DY desejado</div>
+               <div>Ações</div>
+          </div>
+          <div class="container" *ngFor="let active of actives">
+               <div class="column" (click)="redirectToActive(active.code, active.dyDesiredPercentage)">{{ active.code }}</div>
+               <div class="column divisor" (click)="redirectToActive(active.code, active.dyDesiredPercentage)">{{ active.type }}</div>
+               <div class="column divisor">{{ active.dyDesiredPercentage }}%</div>
+               <div class="actions-container column divisor">
+                    <button class="actions edit">
+                         <img src="assets/edit.png" (click)="updateActive(active.id, active.code, active.dyDesiredPercentage)">
+                    </button>
+                    <button class="actions delete" (click)="deleteActive(active.id)">
+                         <img src="assets/delete.png">
+                    </button>
+               </div>
+          </div>
+     </div>
+</section>
+
+<div class="add" (click)="createActive()">
+     <img src="/assets/add.png" class="add-icon">
+</div>
+<app-loading [isLoading]="isLoading"></app-loading>

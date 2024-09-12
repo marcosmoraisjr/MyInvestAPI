@@ -1,0 +1,64 @@
+<section class="main-section">
+    <h1>Criar conta</h1>
+    <p class="subtitle">Crie sua conta e tenha acesso a todas as funcionalidades!</p>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+        <!-- Nome -->
+        <div class="error-container">
+            <p class="error-message" *ngIf="form.get('name')?.errors?.['required'] && form.get('name')?.touched">
+                O campo nome é obrigatório!
+            </p>
+            <p class="error-message" *ngIf="form.get('name')?.errors?.['minlength'] && form.get('name')?.touched">
+                O nome deve ter pelo menos 3 caracteres!
+            </p>
+        </div>
+        <input type="text" name="name" placeholder="Nome" formControlName="name">
+
+        <!-- Email -->
+        <div class="error-container">
+            <p class="error-message" *ngIf="form.get('email')?.errors?.['required'] && form.get('email')?.touched">
+                O campo email é obrigatório!
+            </p>
+            <p class="error-message" *ngIf="form.get('email')?.errors?.['email'] && form.get('email')?.touched">
+                O email deve ser válido!
+            </p>
+        </div>
+        <input type="email" name="email" placeholder="Email" formControlName="email">
+
+        <!-- phone -->
+        <div class="error-container">
+            <p class="error-message" *ngIf="form.get('phone')?.errors?.['required'] && form.get('phone')?.touched">
+                O campo telefone é obrigatório!
+            </p>
+            <p class="error-message" *ngIf="form.get('phone')?.errors?.['minlength'] && form.get('phone')?.touched">
+                O telefone deve ter pelo menos 11 caracteres!
+            </p>
+        </div>
+        <input type="text" name="phone" placeholder="Telefone" formControlName="phone">
+
+        <!-- password -->
+        <div class="error-container">
+            <p class="error-message" *ngIf="form.get('password')?.errors?.['required'] && form.get('password')?.touched">
+                O campo senha é obrigatório!
+            </p>
+            <p class="error-message" *ngIf="form.get('password')?.errors?.['passwordStrength'] && form.get('password')?.touched">
+                O campo senha deve conter mais de 8 caracteres!
+            </p>
+        </div>
+        <input type="password" name="password" placeholder="Digite sua senha" formControlName="password">
+
+        <!-- Verify password -->
+        <div class="error-container">
+            <p class="error-message" *ngIf="form.get('verifyPassword')?.errors?.['required'] && form.get('verifyPassword')?.touched">
+                O campo verificação de senha é obrigatório!
+            </p>
+            <p class="error-message" *ngIf="form.errors?.['passwordsMismatch'] && form.get('verifyPassword')?.touched">
+                As senhas não coincidem!
+            </p>
+        </div>
+        <input type="password" name="password2" placeholder="Digite sua senha novamente" formControlName="verifyPassword">
+
+        <button type="submit">Criar conta</button>
+    </form>
+</section>
+<app-loading [isLoading]="isLoading"></app-loading>

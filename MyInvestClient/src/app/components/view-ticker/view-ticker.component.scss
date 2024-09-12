@@ -1,0 +1,134 @@
+@import '../../scss/color-variables.scss';
+
+.main-section h1 {
+     text-align: center;
+     font-size: 35px;
+     color: $primary-color;
+     margin: 20px 0 10px 0;
+}
+
+table {
+     width: 90%;
+     margin: auto;
+     border-collapse: collapse;
+     margin-top: 20px;
+}
+
+th, td {
+     border: 1px solid #ccc;
+     padding: 8px;
+     text-align: left;
+}
+
+th {
+     background-color: #f2f2f2;
+}
+
+.main-section button {
+     display: block;
+     padding: 15px;
+     font-size: 18px;
+     margin: 25px auto 10px auto;
+     background-color: $primary-color;
+     color: #fff;
+     border: 1px solid #ccc;
+     border-radius: 12px;
+     cursor: pointer;
+     width: 70%;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.actions {
+     display: block;
+     justify-content: center;
+     margin-top: 15px;
+}
+
+.purses {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding: 10px 10px 0 10px;
+}
+
+.purses label {
+     font-size: 16px;
+     margin-bottom: 5px;
+}
+
+select {
+     border-radius: 10px;
+     padding: 10px;
+     width: 80%;
+     cursor: pointer;
+}
+
+.DY {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin-top: 20px;
+     padding: 10px 10px 0 10px;
+}
+
+.DY label {
+     font-size: 16px;
+     margin-bottom: 5px;
+}
+
+.DY input {
+     border-radius: 10px;
+     padding: 10px;
+     width: 75%;
+     border: 1px solid #626262;
+     margin-top: 3px;
+}
+
+.error-container {
+     height: 2px; 
+     margin: 10px 0; 
+     text-align: center;
+     display: none;
+}
+
+.error-message {
+     font-size: 16px;
+     color: rgb(223, 41, 41);
+     transition: opacity 0.3s ease-in-out;
+     margin-bottom: 5px;
+     padding: 0;
+}
+
+.error-container.active {
+     display: block;
+}
+
+@media (min-width: 430px)
+{
+     .purses {
+          padding: 30px 30px 0 30px;
+     }
+}
+
+@media (min-width: 850px)
+{
+     table {
+          width: 700px;
+     }
+
+     .main-section button {
+          width: 600px;
+     }
+
+     .main-section select {
+          width: 600px;
+     }
+
+     .DY input {
+          width: 600px;
+     }
+}

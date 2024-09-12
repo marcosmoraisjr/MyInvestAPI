@@ -1,0 +1,27 @@
+<section class="main-section">
+     <h1>Buscar ativos</h1>
+     <p class="subtitle">Use o campo abaixo para pesquisar as informações sobre novos ativos!</p>
+
+     <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <p class="description-input">Pesquise o ativo pelo seu ticker</p>
+
+          <div class="error-container">
+               <p class="error-message" *ngIf="form.get('name')?.errors?.['required'] && form.get('name')?.touched">
+                    O nome não pode ser nulo ao realizar uma pesquisa!
+               </p>
+          </div>
+          <label>Título do ticker:</label>
+          <input type="text" placeholder="Ex: 'AAPL'" formControlName="name">
+
+          <div class="error-container">
+               <p class="error-message" *ngIf="form.get('dy')?.errors?.['required'] && form.get('dy')?.touched">
+                    O DY (Dividend Yield) não pode ser nulo
+               </p>
+          </div>
+          <label>DY (Dividend Yield) esperado:</label>
+          <input type="text" placeholder="Ex: 5%" formControlName="dy" (input)="onInputChange($event)" [value]="dYDisplayValue">
+
+          <button type="submit">Buscar ativo</button>
+     </form>
+</section>
+<app-loading [isLoading]="isLoading"></app-loading>

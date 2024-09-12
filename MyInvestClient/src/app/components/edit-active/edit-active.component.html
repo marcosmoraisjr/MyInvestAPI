@@ -1,0 +1,64 @@
+<section class="main-section">
+  <h1>Detalhes do ativo</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Data</th>
+        <td>{{ active.data }}</td>
+      </tr>
+      <tr>
+        <th>Ativo</th>
+        <td>{{ active.ativo }}</td>
+      </tr>
+      <tr>
+        <th>Nome do ativo</th>
+        <td>{{ active.nomeDoAtivo }}</td>
+      </tr>
+      <tr>
+        <th>Dividend Yield</th>
+        <td>{{ active.dividentYield }}</td>
+      </tr>
+      <tr>
+        <th>Preço atual</th>
+        <td>{{ active.precoAtual }}</td>
+      </tr>
+      <tr>
+        <th>P/VP</th>
+        <td>{{ active.p_VP }}</td>
+      </tr>
+      <tr>
+        <th>Preço-Teto</th>
+        <td>{{ active.preco_Teto }}</td>
+      </tr>
+      <tr>
+        <th>Indicação</th>
+        <td>{{ active.indicacao }}</td>
+      </tr>
+      <tr>
+        <th>P/L</th>
+        <td>{{ active.p_L }}</td>
+      </tr>
+      <tr>
+        <th>ROE</th>
+        <td>{{ active.roe }}</td>
+      </tr>
+      <tr>
+        <th>Crescimento de Dividendos (5 anos)</th>
+        <td>{{ active.crecimento_De_Dividendos_5_anos }}</td>
+      </tr>
+    </thead>
+  </table>
+
+  <div class="actions">
+    <div class="DY">
+      <label>Informe o DY (Dividend Yield) desejado:</label>
+      <input type="text" placeholder="Ex: 5%" (input)="onInputChange($event)" [value]="dYDisplayValue">
+    </div>
+  </div>
+
+  <button (click)="updateActive()">Atualizar ativo</button>
+</section>
+<app-loading [isLoading]="isLoading"></app-loading>
+
+   
+
